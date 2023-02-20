@@ -1,4 +1,5 @@
 import os
+
 os.system("cls")
 
 pies = int(input("ingresa la cantidad de pies: "))

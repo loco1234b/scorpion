@@ -10,6 +10,11 @@ metros = km * 1000
 pies = pies / 3.2808
 millas = millas * 1609
 
-total = metros + pies + millas
+mmetro = metros + pies + millas
+yardas = mmetro * 1.094
+
+print("en metros son: ",mmetro)
+print("en yardas son: ",yardas)
+print()
 
 
