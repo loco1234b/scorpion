@@ -3,27 +3,27 @@ os.system("cls")
 
 numero = int(input("ingrese el numero de 4 cifras: "))
 
-mill = numero / 1000
-cent = (numero % 1000) /100
-dece = (numero % 1000) % 100 / 10
-unid = (numero % 1000) % 100 % 10
+millar = numero / 1000
+centena = (numero % 1000) /100
+decena = (numero % 1000) % 100 / 10
+unidad = (numero % 1000) % 100 % 10
 
-mayor = mill
-if (cent > mayor):
-    mayor = cent
-if (dece > mayor):
-    mayor = dece
-if (unid > mayor):
-    mayor = unid
+mayor = millar
+if (centena > mayor):
+    mayor = centena
+if (decena > mayor):
+    mayor = decena
+if (unidad > mayor):
+    mayor = unidad
 
-menor = mill
+menor = millar
 
-if (cent < menor):
-    menor = cent
-if (dece < menor):
-    menor = dece
-if (unid < menor):
-    menor = unid
+if (centena < menor):
+    menor = centena
+if (decena < menor):
+    menor = decena
+if (unidad < menor):
+    menor = unidad
 
 mayornum = mayor * 10 + menor
 print("el numero mayor es: ", mayor)

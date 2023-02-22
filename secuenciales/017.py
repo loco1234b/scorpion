@@ -3,13 +3,13 @@ os.system("cls")
 
 monto = int(input("ingresa la donacion: "))
 
-centros = monto * 0.25
-comedorin = monto * 0.35
-escuelain = monto * 0.25
-asilodean = monto * 0.15
+centrosalud = monto * 0.25
+comedorinfantil = monto * 0.35
+escuelainfantil = monto * 0.25
+asilodeancianos = monto * 0.15
 
-print("centro de salud:  s/",centros)
-print("comedor infantil: s/",comedorin)
-print("escuela infantil: s/",escuelain)
-print("asilo de ancianos: s/",asilodean)
+print("centro de salud:  s/",centrosalud)
+print("comedor infantil: s/",comedorinfantil)
+print("escuela infantil: s/",escuelainfantil)
+print("asilo de ancianos: s/",asilodeancianos)
 print()

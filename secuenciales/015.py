@@ -6,14 +6,14 @@ rosa = int(input("ingrese cuantos dolares aporto rosa: $"))
 daniel = int(input("ingrese cuantos soles aporto daniel:  s/"))
 
 daniels = daniel / 3
-capitalto = juan + rosa + daniels
+capitaltotal = juan + rosa + daniels
 
-juan1 = (juan * 100) / capitalto
-rosa1 = (rosa * 100) / capitalto
-daniel1 = (daniels * 100) / capitalto
+juan1 = (juan * 100) / capitaltotal
+rosa1 = (rosa * 100) / capitaltotal
+daniel1 = (daniels * 100) / capitaltotal
 
 print("el importe de daniel a euros es: ",daniels,"$")
-print("capital total en dolares es: ",capitalto,"$")
+print("capital total en dolares es: ",capitaltotal,"$")
 
 print("juan aporto el : " ,juan1,"%")
 print("rosa aporto el : " ,rosa1,"%")

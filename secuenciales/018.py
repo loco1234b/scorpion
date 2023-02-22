@@ -6,12 +6,12 @@ precio = int(input("ingrese el precio unitario: "))
 
 importe = unidades * precio
 descuento = (importe) - importe * 0.15 
-descuentot = descuento * 0.15
-descuentofi = (importe * 0.15) + descuentot
-importeto = descuento - descuentot
+descuentotal = descuento * 0.15
+descuentofinal = (importe * 0.15) + descuentotal
+importetotal = descuento - descuentotal
 
 
 print("ingrese el importe de la compra: ",importe)
-print("ingrese el descuento: ",descuentofi)
-print("ingrese el importe a pagar: ",importeto)
+print("ingrese el descuento: ",descuentofinal)
+print("ingrese el importe a pagar: ",importetotal)
 print()

@@ -7,6 +7,7 @@ pulgadas = int(input("ingresa la cantidad de pulgadas: "))
 
 cm = pies * 30.48
 cm += pulgadas * 2.54
+metro = cm / 100
 
-print("su estatura es: ",cm,"m")
+print("su estatura es: ",metro,"m")
 print()

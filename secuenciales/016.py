@@ -1,14 +1,14 @@
 import os
 os.system("cls")
 
-horast = int(input("ingrese el numero de horas trabajadas: "))
-tarifah = int(input("ingrese la tarifa horaria: "))
+horasTrabajadas = int(input("ingrese el numero de horas trabajadas: "))
+tarifahoraria = int(input("ingrese la tarifa horaria: "))
 
-sueldoba = horast * tarifah
-sueldobru = sueldoba + (sueldoba * 0.20)
-sueldone = sueldobru - ( sueldobru * 0.10)
+sueldobasico = horasTrabajadas * tarifahoraria
+sueldobruto = sueldobasico + (sueldobasico * 0.20)
+sueldoneto = sueldobruto - ( sueldobruto * 0.10)
 
-print("el sueldo basico es: ",sueldoba)
-print("el sueldo bruto es: ",sueldobru)
-print("el sueldo neto es: ",sueldone)
+print("el sueldo basico es: ",sueldobasico)
+print("el sueldo bruto es: ",sueldobruto)
+print("el sueldo neto es: ",sueldoneto)
 print()

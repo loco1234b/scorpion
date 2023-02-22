@@ -5,13 +5,10 @@ valora =int(input("ingrese el valor a: "))
 valorb = int(input("ingresa el valor b: "))
 valorc = int(input("ingrese el valor c: "))
 
-multi = valorb * valorb - 4 * valora * valorc
-sum = math.sqrt(multi)
-if multi<0:
-    print("no existen soluciones reales")
-else:
-    ecuacion1 = (- valorb + sum) / (2 * valora)
-    ecuacion2 = (- valorb - sum) / (2 * valora)
+raiz =math.sqrt(pow(valorb,2)- 4 * valora * valorc)
+
+ecuacion1 = (- valorb + raiz) / (2 * valora)
+ecuacion2 = (- valorb - raiz) / (2 * valora)
 
 
 
