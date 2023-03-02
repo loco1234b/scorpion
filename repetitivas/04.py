@@ -1,5 +1,7 @@
 import os
 os.system("cls")
 
-mum = int(input("ingresa el numero: "))
+numero = int(input("ingresa el numero: "))
 
+if numero % == 0:
+   print("multiplos")
