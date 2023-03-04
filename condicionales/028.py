@@ -1,9 +1,10 @@
-import os
+import os,datetime
 os.system("cls")
 
-hora = int(input("ingrese la hora: "))
+hora = float(input("ingrese la hora: "))
 
-
+if hora == 5:
+    h = 
 
 if hora > 23:
     print("error de hora")
@@ -15,3 +16,5 @@ else:
 
 if hora > 12:
     hora = hora - 12
+
+

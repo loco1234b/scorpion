@@ -9,7 +9,9 @@ unidades = numero % 10
 
 if numero > 100 and numero < 999:
     print("los numeros son de 3 cifras")
-if decena == centena + 1 and unidades == decena + 1:
-    print("los numeros son ascendente")
-elif decena == centena -1 and unidades == decena -1:
+if centena > decena  and centena > unidades and decena > unidades:
     print("los numeros son desendentes")
+elif unidades > decena and unidades > centena and decena > centena:
+    print("los numeros son ascendentes")
+else:
+    print("los numeros no son ascendentes ni descendentes")

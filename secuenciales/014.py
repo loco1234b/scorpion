@@ -7,9 +7,7 @@ n3 = int(input("tercer numero: "))
 n4 = int(input("cuarto numero: "))
 n5 = int(input("quinto numero: "))
 
-valor = max( n1,n2,n3,n4,n5)
-valor1 = min(valor)
-valor2 = max(valor1)
+menor= min(n1,n2,n3,n4,n5)
 
-print("mayor: ",valor)
-print("mayor: ",valor2)
+menor-= min(n1,n2,n3,n4,n5)
+print(menor,menor)
