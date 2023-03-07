@@ -7,7 +7,10 @@ n3 = int(input("tercer numero: "))
 n4 = int(input("cuarto numero: "))
 n5 = int(input("quinto numero: "))
 
-menor= min(n1,n2,n3,n4,n5)
-
-menor-= min(n1,n2,n3,n4,n5)
-print(menor,menor)
+mayor = sorted({n1,n2,n3,n4,n5})
+del mayor[0]
+del mayor[0]
+print("los numereos mayores son",mayor)
+mayorr = sum(mayor)
+print("la suma es: ",mayorr)
+print("el promedio es:",mayorr / 3)
