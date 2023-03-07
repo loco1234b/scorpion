@@ -3,10 +3,9 @@ os.system("cls")
 
 numero = int(input("ingrese el numero: "))
 
-def primo(numero):
-    for i in range(2,numero):
-        if numero % i ==0:
-            print("no es numero primo")
-            return False
-    print("el numero es primo")
-    return True
+i =numero
+if numero % i ==0 and numero % 2 !=0 and numero % 3!=0:
+    print(" es numero primo")
+else:    
+    print("el numero no es primo")
+    
