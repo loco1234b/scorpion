@@ -18,10 +18,12 @@ def txtCodigo_Enter(*args) :
 
     txtCantidad.config(state='normal')
     txtCantidad.focus()
+
+    
     
     productos = open ('varios\productos.txt','r')
     for linea in productos.readlines() :
-        producto = linea.split(',')
+        producto = linea.split('1,tornillo,3,12')
         producto_descripcion = producto[1]
         producto_unidad = producto[2]
         producto_precio = producto[3]
@@ -94,6 +96,7 @@ txtCantidad.place(x=430, y=180, width=50, height=25)
 txtCantidad.bind("<Return>", txtCantidad_Enter)
 
 btnNuevo = Button(frame, text='Nuevo', command=btnNuevo_Click, cursor='hand2').place(x=500, y=180, width=80, height=25)
+btnNuevo = Button(frame, text='imprimir', command=txtCantidad_Enter, cursor='hand2').place(x=500, y=140, width=80, height=25)
 
 tblDetalle = ttk.Treeview(frame, columns=('id','Descripcion','Unidad','Cantidad','Precio','SubTotal'))
 tblDetalle.place(x=20, y=220, width=550, height=300)
@@ -114,12 +117,9 @@ tblDetalle.heading('#5', text='SubTotal')
 svTotal = StringVar()
 Label(frame, textvariable=svTotal, anchor=W).place(x=450, y=550, height=25)
 
-
-f = open ('varios\productos.txt','r')
-f.writelines(["\n1,tornillo,0.20,50","\n2,lija,1.50,20"])
-f.close()
-
-
-
+productos = open('productos.text','w')
+productos.write('1,tornillo,2,20\n')
+productos.write('2,lija,3,50\n')
+productos.close()
 
 window.mainloop()
