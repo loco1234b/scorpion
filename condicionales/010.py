@@ -9,9 +9,13 @@ nota5 = int(input("la nota 5 es: "))
 
 notamayor = max(nota1,nota2,nota3,nota4,nota5)
 notamenor = min(nota1,nota2,nota3,nota4,nota5)
-
 promedio = (nota1 + nota2 + nota3 + nota4 + nota5)/ 5
 
 print("la nota eliminada mayor es: ",notamayor )
 print("la nota eliminada menor es: ",notamenor )
+
+if promedio >= 11:
+    print("aprobo")
+else:
+    print("desaprobo")
 print("el promedio es: ",promedio)

@@ -3,39 +3,23 @@ os.system("cls")
 
 monto = int(input("ingresa la cantidad de dinero: "))
 
-if monto >= 200:
-    diner = monto // 200
-    print("existen " + str(diner) + " billetes de 200 soles")
-    dinerr = monto % 200
+d200 = monto / 200
+d100 =(monto / 100) /1
+d50 = (monto / 50) /1
+d20 = monto / 20
+d10 = monto /10
+d5 =  monto / 5
+d2 = monto / 2 
+d1 = monto / 1
 
-if monto >= 100:
-    diner = monto // 100
-    print("existen " + str(diner) + " billetes de 100 soles")
-    dinerr = monto % 100
-if monto >= 50:
-    diner = monto // 50
-    print("existen " + str(diner) + " billetes de 50 soles")
-    dinerr = monto % 50
-if monto >= 20:
-    diner = monto // 20
-    print("existen " + str(diner) + " billetes de 20 soles")
-    dinerr = monto % 20
-if monto >= 10:
-    diner = monto // 10
-    print("existen " + str(diner) + " billetes de 10 soles")
-    dinerr = monto % 10
-if monto >= 5:
-    diner = monto // 5
-    print("existen " + str(diner) + " monedas de 5 soles")
-    dinerr = monto % 5
-if monto >= 2:
-    diner = monto // 2
-    print("existen " + str(diner) + " monedas de 2 soles")
-    dinerr = monto % 2
-if monto >= 1:
-    diner = monto // 1
-    print("existen " + str(diner) + " monedas de 1 sol")
-    dinerr = monto % 1
+print(f'existen ',int(d200),"billetes de 200")
+print(f'existen ',int(d100),"billetes de 100")
+print(f'existen ',int(d50),"billetes de 50")
+print(f'existen ',int(d20),"billetes de 20")
+print(f'existen ',int(d10),"billetes de 10")
+print(f'existen ',int(d5),"monedas de 5 ")
+print(f'existen ',int(d2),"monedas de 2")
+print(f'existen ',int(d1),"monedas de 1")
 
 
 
