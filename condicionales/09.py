@@ -6,11 +6,11 @@ codigo = int(input("ingrese el codigo: "))
 
 if codigo == 101:
     precio = 17
-if codigo == 102:
+elif codigo == 102:
     precio = 25
-if codigo == 103:
+elif codigo == 103:
     precio = 16
-if codigo == 104:
+elif codigo == 104:
     precio = 27
 
 importecompra = precio * unidades
